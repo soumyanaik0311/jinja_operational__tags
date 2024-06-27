@@ -55,7 +55,28 @@
 
 <!-- nested if condition -->
 
-   {% if age %}
+    {% if age <= 30 %}
+        {% if age < 16 %}
+        <h1>
+            Play children games
+        </h1>
+        {% else %}
+        <h1>
+            Play Lovers games
+        </h1>
+        {% endif %}
+    {% else %}
+        {% if age > 30 and age < 46%}
+        <h1>
+            Play strategy games
+        </h1>
+        {% else %}
+        <h1>
+            Listen devotional music
+        </h1>
+        {% endif %}
+    {% endif %}
+        
 </center>
 </body>
 </html>
